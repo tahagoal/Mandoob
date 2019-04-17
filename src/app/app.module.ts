@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 import { AppComponent } from './app.component';
 import { SalesCreateComponent } from './sales-create/sales-create.component';
@@ -68,6 +70,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    NgbModule,
+    ColorPickerModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

@@ -1602,6 +1602,7 @@ header .form-inline .search-form.close {
   float: left;
   padding: 1.875em;
   width: 100%;
+  min-height: 90vh;
 }
 
 .card {
@@ -3335,6 +3336,78 @@ form label{
   padding-left: 0px;
 }
 
+.marginR20{
+  margin-right: 20px;
+}
+
+.internal-input{
+  position: absolute;
+  right: 25px;
+  top: 7px;
+  font-size: 20px;
+  color: gray;
+}
+
+.checkbox_mod .check_label {
+  display: block;
+  font-size: 20px;
+  height: 30px;
+  width: 120px;
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 3px;
+  margin-top: 3px;
+  background-color: #E3E3E3;
+  border: 1px solid #C1C1C1;
+}
+
+.checkbox_mod .checkbox {
+  visibility: hidden;
+}
+.checkbox_mod .checkbox:checked ~ .checker {
+  transform: translate(-10%, -50%) scale(10);
+}
+.checkbox_mod .checkbox:focus {
+  outline: none;
+}
+.checkbox_mod .checkbox:checked ~ .dot {
+  background: #fff;
+  transform: translateX(370%);
+}
+
+.checkbox_mod .checker {
+  background: #278D50;
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 50%;
+  transform: translate(-10%, -50%) scale(0);
+  transform-origin: center;
+  transition: transform 350ms cubic-bezier(1, 0.97, 0.97, 0.97);
+  z-index: 1;
+}
+
+.checkbox_mod .dot {
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 2;
+  background: white;
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: all 500ms cubic-bezier(0, 0.97, 0.97, 0.97);
+}
+
 /* Overriding some css */
 
 .row .row {
@@ -3343,17 +3416,21 @@ form label{
 }
 
 .btn-success {
-  background-color: #278D50;
-  border-color: #278D50;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 10px;
+  background-color: #278D50 !important;
+  border-color: #278D50 !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 }
 
 .btn-primary {
-  background-color: #27498D;
-  border-color: #27498D;
-  padding-left: 25px;
-  padding-right: 25px;
-  border-radius: 10px;
+  background-color: #27498D !important;
+  border-color: #27498D !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 }
