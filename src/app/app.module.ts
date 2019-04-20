@@ -15,6 +15,8 @@ import { ProductCreateComponent } from './product-create/product-create.componen
 import { RouteCreateComponent } from './route-create/route-create.component';
 import { ScheduleCreateComponent } from './schedule-create/schedule-create.component';
 import { FooterComponent } from './footer/footer.component';
+import { SalesComponent } from './sales/sales.component';
+import { SalesListComponent } from './sales-list/sales-list.component';
 
 
 const appRoutes: Routes = [
@@ -23,8 +25,11 @@ const appRoutes: Routes = [
     component: AppComponent
   },
   { 
-    path: 'sales-create', 
-    component: SalesCreateComponent 
+    path: 'sales', 
+    children: [
+          { path: 'create', component: SalesCreateComponent },
+          { path: 'list', component: SalesListComponent },
+        ]
   },
   { 
     path: 'client-create', 
@@ -66,7 +71,9 @@ const appRoutes: Routes = [
     ProductCreateComponent,
     RouteCreateComponent,
     ScheduleCreateComponent,
-    FooterComponent
+    FooterComponent,
+    SalesComponent,
+    SalesListComponent
   ],
   imports: [
     BrowserModule,
