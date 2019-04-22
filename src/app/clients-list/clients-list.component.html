@@ -1,0 +1,132 @@
+<div class="content">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body card-title">
+            <h4 class="box-title float-left">Clients List</h4>
+            <div class="form-actions form-group float-right"><button type="submit" class="btn btn-primary btn-sm">Create
+                new Client</button></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table id="bootstrap-data-table"
+                      class="table table-striped table-bordered dataTable no-footer mandoobtable" role="grid"
+                      aria-describedby="bootstrap-data-table_info">
+                      <thead>
+                        <tr role="row">
+                          <th class="sorting_asc" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1"
+                            colspan="3">Actions</th>
+                          <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1" colspan="1">
+                            Info</th>
+                          <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1" colspan="1">
+                            Client Name</th>
+                          <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1" colspan="1">
+                            Goverment</th>
+                          <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1" colspan="1">
+                            City</th>
+                          <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1" colspan="1">
+                            Route</th>
+                          <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table" rowspan="1" colspan="1">
+                            Balance</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="3">
+                            <button type="submit" class="btn btn-primary btn-sm center">+</button>
+                          </td>
+                          <td></td>
+                          <td>
+                            <input type="text" name="text-input" class="form-control" placeholder="Client Name">
+                          </td>
+                          <td>
+                            <input type="text" name="text-input" class="form-control" placeholder="Goverment">
+                          </td>
+                          <td>
+                            <input type="text" name="text-input" class="form-control" placeholder="City">
+                          </td>
+                          <td>
+                            <input type="text" name="text-input" class="form-control" placeholder="Route">
+                          </td>
+                          <td>
+                              <input type="text" name="text-input" class="form-control" placeholder="Balance">
+                          </td>
+                        </tr>
+                        <tr role="row" class="odd">
+                          <td colspan="1" class="listedit">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                          </td>
+                          <td colspan="1">
+                            <div class="row form-group checkbox_mod wid50">
+                              <label class="check_label">
+                                <input class="checkbox" type="checkbox" checked />
+                                <div class="checker"></div>
+                                <div class="dot"></div>
+                              </label>
+                            </div>
+                          </td>
+                          <td colspan="1">
+                              <button type="submit" class="btn btn-primary btn-sm">Schedule Visit</button>
+                          </td>
+                          <td class="listinfo">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                          </td>
+                          <td align="center" >Ahmed <i class="fa fa-user-circle" 
+                            data-toggle="tooltip" data-placement="top" title="View Visit" aria-hidden="true"></i></td>
+                          <td align="center" >Egypt</td>
+                          <td align="center" >Cairo</td>
+                          <td align="center" >S1 -> S2</td>
+                          <td align="center"  class="posbal">3,542 $</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5">
+                    <div class="dataTables_info" id="bootstrap-data-table_info" role="status" aria-live="polite">Showing 1
+                      to 10 of 57 entries</div>
+                  </div>
+                  <div class="col-sm-12 col-md-7">
+                    <div class="dataTables_paginate paging_simple_numbers" id="bootstrap-data-table_paginate">
+                      <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="bootstrap-data-table_previous"><a
+                            href="#" aria-controls="bootstrap-data-table" data-dt-idx="0" tabindex="0"
+                            class="page-link">Previous</a></li>
+                        <li class="paginate_button page-item active"><a href="#" aria-controls="bootstrap-data-table"
+                            data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                        <li class="paginate_button page-item "><a href="#" aria-controls="bootstrap-data-table"
+                            data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                        <li class="paginate_button page-item "><a href="#" aria-controls="bootstrap-data-table"
+                            data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                        <li class="paginate_button page-item "><a href="#" aria-controls="bootstrap-data-table"
+                            data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                        <li class="paginate_button page-item "><a href="#" aria-controls="bootstrap-data-table"
+                            data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                        <li class="paginate_button page-item "><a href="#" aria-controls="bootstrap-data-table"
+                            data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                        <li class="paginate_button page-item next" id="bootstrap-data-table_next"><a href="#"
+                            aria-controls="bootstrap-data-table" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.content -->
+  <div class="clearfix"></div>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>

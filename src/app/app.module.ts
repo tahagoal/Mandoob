@@ -17,6 +17,12 @@ import { ScheduleCreateComponent } from './schedule-create/schedule-create.compo
 import { FooterComponent } from './footer/footer.component';
 import { SalesComponent } from './sales/sales.component';
 import { SalesListComponent } from './sales-list/sales-list.component';
+import { ClientsListComponent } from './clients-list/clients-list.component';
+import { RoutesListComponent } from './routes-list/routes-list.component';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { SchedulesListComponent } from './schedules-list/schedules-list.component';
+import { NotificationsListComponent } from './notifications-list/notifications-list.component';
+import { OrdersListComponent } from './orders-list/orders-list.component';
 
 
 const appRoutes: Routes = [
@@ -32,24 +38,39 @@ const appRoutes: Routes = [
         ]
   },
   { 
-    path: 'client-create', 
-    component: ClientCreateComponent 
+    path: 'client',
+    children: [
+      { path: 'create', component: ClientCreateComponent },
+      { path: 'list', component: ClientsListComponent },
+    ] 
   },
   { 
-    path: 'notification-create', 
-    component: NotificationCreateComponent 
+    path: 'notification', 
+    children: [
+      { path: 'create', component: NotificationCreateComponent },
+      { path: 'list', component: NotificationsListComponent },
+    ] 
   },
   { 
-    path: 'product-create', 
-    component: ProductCreateComponent 
+    path: 'product', 
+    children: [
+      { path: 'create', component: ProductCreateComponent },
+      { path: 'list', component: ProductsListComponent },
+    ] 
   },
   { 
-    path: 'route-create', 
-    component: RouteCreateComponent 
+    path: 'route', 
+    children: [
+      { path: 'create', component: RouteCreateComponent },
+      { path: 'list', component: RoutesListComponent },
+    ] 
   },
   { 
     path: 'schedule-create', 
-    component: ScheduleCreateComponent 
+    children: [
+      { path: 'create', component: ScheduleCreateComponent },
+      { path: 'list', component: SchedulesListComponent },
+    ] 
   },
   // {
   //   path: 'heroes',
@@ -73,7 +94,13 @@ const appRoutes: Routes = [
     ScheduleCreateComponent,
     FooterComponent,
     SalesComponent,
-    SalesListComponent
+    SalesListComponent,
+    ClientsListComponent,
+    RoutesListComponent,
+    ProductsListComponent,
+    SchedulesListComponent,
+    NotificationsListComponent,
+    OrdersListComponent
   ],
   imports: [
     BrowserModule,
